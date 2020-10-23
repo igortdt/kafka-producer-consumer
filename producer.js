@@ -12,7 +12,7 @@ producer.on("ready", function() {
   console.log("ready");
   setInterval(function() {
     payloads = [
-      { topic: "meu-topico-legal", messages: `Message ${count}.`, partition: 0 }
+      { topic: "topico-teste", messages: `Message ${count}.`, partition: 0 }
     ];
 
     producer.send(payloads, function(err, data) {

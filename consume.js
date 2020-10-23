@@ -14,6 +14,6 @@ var data = function (messageSet) {
 
 // Subscribe to the Kafka topic
 return consumer.init().then(function () {
-    return consumer.subscribe('meu-topico-legal', 0, 
+    return consumer.subscribe('topico-teste', 0, 
                          {time: Kafka.EARLIEST_OFFSET}, data);
 });
